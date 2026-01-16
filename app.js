@@ -23,6 +23,7 @@ app.post('/slash', async (req, res) => {
     });
     
     const data = await response.json();
+    console.log('Slack API response:', JSON.stringify(data));
     
     // Send follow-up message
     const message = data.ok 
