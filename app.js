@@ -10,7 +10,7 @@ app.post('/slash', async (req, res) => {
   const { channel_id, channel_name, user_id } = req.body;
   
   // Acknowledge immediately
-  res.json({ response_type: 'ephemeral', text: `Converting #${channel_name} to private...` });
+  res.json({ response_type: 'ephemeral', text: `Sir, yes, sir!! Converting #${channel_name} to private...` });
   
   try {
     const response = await fetch('https://slack.com/api/admin.conversations.convertToPrivate', {
